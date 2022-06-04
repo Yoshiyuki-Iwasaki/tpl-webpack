@@ -15,5 +15,3 @@ src
 出力先ディレクトリ
 
 dist
-# temp_webpack_ts_ejs
-# temp_webpack_ts_ejs
