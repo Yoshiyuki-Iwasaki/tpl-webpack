@@ -15,3 +15,4 @@ src
 出力先ディレクトリ
 
 dist
+# memory-game
