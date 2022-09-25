@@ -3,7 +3,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       filename: "index.html",
-      template: "pug/index.pug",
+      template: "ejs/index.ejs",
       inject: false,
     }),
   ],
