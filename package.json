@@ -11,25 +11,17 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@babel/core": "^7.19.6",
+    "@babel/preset-env": "^7.19.4",
+    "@types/jquery": "^3.5.14",
+    "@types/slick-carousel": "^1.6.37",
     "browser-sync": "^2.26.7",
-    "gulp": "^4.0.2",
-    "gulp-sass": "^4.1.0",
-    "gulp-typescript": "^6.0.0-alpha.1",
-    "typescript": "^3.9.5"
-  },
-  "dependencies": {
-    "@babel/core": "^7.12.16",
-    "@babel/preset-env": "^7.12.16",
-    "@types/jquery": "^3.5.5",
-    "@types/slick-carousel": "^1.6.34",
-    "gulp-babel": "^8.0.0",
-    "gulp-ejs": "^5.1.0",
-    "gulp-rename": "^2.0.0",
-    "jquery": "^3.5.1",
+    "jquery": "^3.6.1",
     "slick-carousel": "^1.8.1",
-    "swiper": "^6.4.12",
-    "ts-loader": "^8.0.14",
-    "webpack": "^5.18.0",
-    "webpack-stream": "^6.1.2"
+    "swiper": "^8.4.4",
+    "ts-loader": "^9.4.1",
+    "typescript": "^3.9.5",
+    "webpack": "^5.74.0",
+    "webpack-stream": "^7.0.0"
   }
 }
