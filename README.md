@@ -1,18 +1,15 @@
+# temp_webpack
 ## 使い方
 
-インストール
+### インストール
+```
+npm i
+```
 
-npm i -D
-
-起動・自動トランスパイル
-
-gulp
-
-作成ディレクトリ
-
-src
-
-出力先ディレクトリ
-
-dist
-# memory-game
+### コマンド実行
+```
+npm run watch
+```
+```
+npm run build
+```
