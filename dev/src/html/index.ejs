@@ -4,11 +4,11 @@ keywords: 'キーワード' , url: 'http://localhost:8080/', pageName: 'top', pa
 
 <!DOCTYPE html>
 <html lang="ja">
-  <%- include('./_inc/head', {baseMeta: baseMeta}); %>
+  <%- include('./_inc/_head', {baseMeta: baseMeta}); %>
 
   <body>
     <main role="main">
-      <%- include('./_inc/header', {baseMeta: baseMeta}); %>
+      <%- include('./_inc/_header', {baseMeta: baseMeta}); %>
 
       <section class="pageSec">
         <div class="pageSec__inner">
@@ -93,8 +93,7 @@ keywords: 'キーワード' , url: 'http://localhost:8080/', pageName: 'top', pa
         </div>
       </section>
 
-      <%- include('./_inc/aside', {baseMeta: baseMeta}); %> <%-
-      include('./_inc/footer', {baseMeta: baseMeta}); %>
+      <%- include('./_inc/_footer', {baseMeta: baseMeta}); %>
     </main>
   </body>
 </html>
