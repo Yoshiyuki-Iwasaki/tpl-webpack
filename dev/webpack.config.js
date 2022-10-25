@@ -43,8 +43,6 @@ const entries = WebpackWatchedGlobEntries.getEntries(
   }
 )();
 
-console.log('entries', entries);
-
 const htmlGlobPlugins = (entries) => {
   return Object.keys(entries).map(
     (key) =>
@@ -64,8 +62,6 @@ const htmlGlobPlugins = (entries) => {
       })
   );
 };
-
-console.log('htmlGlobPlugins', htmlGlobPlugins);
 
 /*
   Typescript
