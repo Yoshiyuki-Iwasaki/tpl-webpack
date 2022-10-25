@@ -2,6 +2,8 @@ const path = require('path'); // pathモジュール読み込み
 const MiniCssExtractPlugin = require('mini-css-extract-plugin'); // css出力用
 const TerserPlugin = require('terser-webpack-plugin');
 const CopyPlugin = require('copy-webpack-plugin'); // 画像のコピー用
+const ImageminPlugin = require('imagemin-webpack-plugin').default; // 画像の圧縮用
+const ImageminMozjpeg = require('imagemin-mozjpeg'); // 画像の圧縮用
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin'); // BrowserSync用
 const HtmlWebpackPlugin = require('html-webpack-plugin'); // HTMLの読みこみ用
 const WebpackWatchedGlobEntries = require('webpack-watched-glob-entries-plugin'); //読み込みファイルを複数指定する
@@ -157,6 +159,24 @@ const app = {
           to: './assets/img/',
         },
       ],
+    }),
+    new ImageminPlugin({
+      test: /\.(jpe?g|png|gif|svg)$/i,
+      plugins: [
+        ImageminMozjpeg({
+          quality: 85,
+          progressive: true,
+        }),
+      ],
+      pngquant: {
+        quality: '70-85',
+      },
+      gifsicle: {
+        interlaced: false,
+        optimizationLevel: 10,
+        colors: 256,
+      },
+      svgo: {},
     }),
     new BrowserSyncPlugin({
       host: 'localhost',
