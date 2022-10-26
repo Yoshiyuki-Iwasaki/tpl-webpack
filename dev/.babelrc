@@ -1,7 +1,0 @@
-{
-    // コメント
-    "presets": [
-        "@babel/preset-env"
-    ],
-    "compact": false
-}
