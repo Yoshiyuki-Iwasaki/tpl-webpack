@@ -4,96 +4,23 @@ keywords: 'キーワード' , url: 'http://localhost:8080/', pageName: 'top', pa
 
 <!DOCTYPE html>
 <html lang="ja">
-  <%- include('./_inc/_head', {baseMeta: baseMeta}); %>
+<%- include('./_inc/_head', {baseMeta: baseMeta}); %>
 
-  <body>
-    <main role="main">
-      <%- include('./_inc/_header', {baseMeta: baseMeta}); %>
+<body>
+  <main role="main">
+    <%- include('./_inc/_header', {baseMeta: baseMeta}); %>
 
-      <section class="pageSec">
-        <div class="pageSec__inner">
-          <h2 class="pageSec__inner__title"><%= baseMeta.pageName %></h2>
-          <p class="pageSec__inner__text">
-            テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-          </p>
-          <p class="pageSec__inner__text">
-            テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-          </p>
-          <p class="pageSec__inner__text">
-            テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-          </p>
-          <p class="pageSec__inner__text">
-            テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-          </p>
-          <p class="pageSec__inner__text">
-            テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-          </p>
-          <p class="pageSec__inner__text">
-            テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-          </p>
-          <p class="pageSec__inner__text">
-            テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-          </p>
-          <p class="pageSec__inner__text">
-            テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-          </p>
-          <p class="pageSec__inner__text">
-            テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-          </p>
-          <p class="pageSec__inner__text">
-            テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-          </p>
-          <p class="pageSec__inner__text">
-            テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-          </p>
-          <p class="pageSec__inner__text">
-            テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-          </p>
-          <p class="pageSec__inner__text">
-            テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-          </p>
-          <p class="pageSec__inner__text">
-            テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-          </p>
-          <p class="pageSec__inner__text">
-            テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-          </p>
+    <section class="pageSec">
+      <div class="pageSec__inner">
+        <h2 class="pageSec__inner__title"><%= baseMeta.pageName %></h2>
+        <p class="pageSec__inner__text">
+          テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+        </p>
+      </div>
+    </section>
 
-          <!-- Slider main container -->
-          <div class="container">
-            <!-- Additional required wrapper -->
-            <div class="wrapper">
-              <!-- Slides -->
-              <div class="slide">
-                <img src="./assets/img/icon.jpg" alt="" />
-              </div>
-              <div class="slide">
-                <img src="./assets/img/icon02.jpg" alt="" />
-              </div>
-              <div class="slide">
-                <img src="./assets/img/icon03.jpg" alt="" />
-              </div>
-              <div class="slide">
-                <img src="./assets/img/icon04.jpg" alt="" />
-              </div>
-              <div class="slide">
-                <img src="./assets/img/icon05.jpg" alt="" />
-              </div>
-            </div>
-            <!-- If we need pagination -->
-            <div class="pagination"></div>
+    <%- include('./_inc/_footer', {baseMeta: baseMeta}); %>
+  </main>
+</body>
 
-            <!-- If we need navigation buttons -->
-            <div class="button-prev"></div>
-            <div class="button-next"></div>
-
-            <!-- If we need scrollbar -->
-            <div class="scrollbar"></div>
-          </div>
-        </div>
-      </section>
-
-      <%- include('./_inc/_footer', {baseMeta: baseMeta}); %>
-    </main>
-  </body>
 </html>

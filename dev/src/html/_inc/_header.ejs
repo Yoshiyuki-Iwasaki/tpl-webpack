@@ -1,6 +1,5 @@
 <% var pages = [ { pageName: 'About', pageDir: 'about' }, { pageName: 'Product',
-pageDir: 'product' }, { pageName: 'News', pageDir: 'news' }, { pageName: 'Blog',
-pageDir: 'blog' }, { pageName: 'Contact', pageDir: 'contact' } ] %>
+pageDir: 'product' }, { pageName: 'News', pageDir: 'news' }] %>
 
 <header class="siteHeader" role="banner">
   <div class="siteHeader__inner">
@@ -11,11 +10,7 @@ pageDir: 'blog' }, { pageName: 'Contact', pageDir: 'contact' } ] %>
       <ul class="siteHeader__inner__gnav__list" role="list">
         <% for (var i in pages) { %>
         <li class="siteHeader__inner__gnav__list__item" role="listitem">
-          <a
-            class="siteHeader__inner__gnav__list__item__link"
-            href="/<%- pages[i].pageDir %>/"
-            ><%- pages[i].pageName %></a
-          >
+          <a class="siteHeader__inner__gnav__list__item__link" href="/<%- pages[i].pageDir %>/"><%- pages[i].pageName %></a>
         </li>
         <% } %>
       </ul>
