@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "watch": "npx webpack -w --mode development",
+    "dev": "npx webpack --config webpack.dev.js",
     "build": "npx webpack --config webpack.prod.js"
   },
   "keywords": [],
