@@ -1,15 +1,18 @@
 {
   "compilerOptions": {
-    "lib": ["es2015","DOM"],
-    "module": "ES6",
-    "outDir": "dist",
-    "sourceMap": true,
-    "strict": true,
-    "target": "es2015",
+    "target": "es2021",
+    "module": "CommonJS",
+    "rootDir": "./src",
     "moduleResolution": "node",
-    "allowSyntheticDefaultImports": true,
+    "sourceMap": true,
+    "outDir": "./dist",
+    "importsNotUsedAsValues": "error",
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedIndexedAccess": true,
+    "noPropertyAccessFromIndexSignature": true
   },
-  "include": [
-    "src"
-  ]
+  "include": ["src/**/*"]
 }

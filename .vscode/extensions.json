@@ -1,0 +1,8 @@
+{
+  "recommendations": [
+    "stylelint.vscode-stylelint", // stylelint
+    "esbenp.prettier-vscode", // prettier
+    "j69.ejs-beautify", // ejs-beautify
+    "EditorConfig.EditorConfig", // editorconfig
+  ]
+}
