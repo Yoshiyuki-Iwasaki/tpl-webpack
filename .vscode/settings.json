@@ -1,9 +1,26 @@
 {
-  "nuxt.isNuxtApp": false,
-  "emmet.includeLanguages": {
-    "ejs": "html",
-  },
-  "[html]": {
-    "editor.defaultFormatter": "j69.ejs-beautify"
-  },
+	"scss.validate": false,
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"eslint.format.enable": false,
+	"editor.formatOnSave": true,
+	"stylelint.configFile": "./dev/.stylelintrc",
+	"prettier.configPath": "./dev/.prettierrc",
+	"emmet.includeLanguages": {
+		"ejs": "html"
+	},
+	"[html]": {
+		"editor.defaultFormatter": "j69.ejs-beautify"
+	},
+	"[ejs]": {
+		"editor.formatOnSave": true
+	},
+	"[scss]": {
+		"editor.codeActionsOnSave": {
+			"source.fixAll.stylelint": true
+		}
+	},
+	"editor.codeActionsOnSave": {
+		"source.fixAll.eslint": true
+	},
+	"nuxt.isNuxtApp": false
 }
